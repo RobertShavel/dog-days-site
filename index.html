@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dog Days</title>
+
+  <style>
+    :root{
+      /* From ColorScheme.swift */
+      --accent: #2BC2BF;                 /* AppColors.accent */
+      --onAccent: #ffffff;               /* AppColors.onAccent */
+      --accent20: rgba(43,194,191,0.20); /* AppColors.accent.opacity(0.20) */
+
+      /* iOS-ish surfaces (approx of systemBackground / secondarySystemBackground) */
+      --bg: #ffffff;     /* systemBackground (light) */
+      --text: #0b0b0f;   /* label (light-ish) */
+      --surface: #f2f2f7;/* secondarySystemBackground (light) */
+      --stroke: rgba(60,60,67,0.29); /* separator-ish */
+    }
+
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg: #000000;         /* systemBackground (dark) */
+        --text: #ffffff;       /* label (dark) */
+        --surface: #1c1c1e;    /* secondarySystemBackground (dark) */
+        --stroke: rgba(84,84,88,0.65);
+      }
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      min-height:100vh;
+      background: linear-gradient(135deg, var(--accent20), var(--surface)); /* gradientStart -> gradientEnd */
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+
+      /* Rounded system feel (closest to .rounded on iOS) */
+      font-family: ui-rounded, -apple-system, system-ui, "SF Pro Display", "SF Pro Rounded", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .wrap{
+      width: min(720px, 100%);
+    }
+
+    .card{
+      background: color-mix(in srgb, var(--surface) 95%, transparent);
+      border: 1px solid var(--stroke);
+      border-radius: 24px;
+      padding: 44px 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+      text-align:center;
+    }
+
+    /* AppFonts.screenTitle = .largeTitle, rounded, bold */
+    h1{
+      margin:0 0 10px;
+      font-size: clamp(42px, 6vw, 64px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    /* AppFonts.body = 16 regular rounded */
+    p{
+      margin: 0 auto 26px;
+      font-size: 16px;
+      line-height: 1.45;
+      max-width: 38ch;
+      opacity: 0.85;
+    }
+
+    /* PrimaryButtonStyle (12 radius, padding, full width, stroke, shadow, press scale) */
+    .btn{
+      display:block;
+      width:100%;
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: var(--accent);
+      color: var(--onAccent);
+      text-decoration:none;
+      font-size: 16px;
+      font-weight: 600;
+      border: 1px solid rgba(43,194,191,0.90);
+      box-shadow: 0 3px 4px rgba(43,194,191,0.15);
+      transform: scale(1);
+      transition: transform .12s ease, filter .12s ease;
+      user-select:none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn:active{
+      transform: scale(0.95);
+    }
+
+    .fine{
+      margin-top: 14px;
+      font-size: 14px; /* AppFonts.caption-ish */
+      opacity: 0.7;
+    }
+
+    .links{
+      margin-top: 18px;
+      display:flex;
+      justify-content:center;
+      gap: 14px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+    .links a{
+      color: var(--text);
+      opacity: 0.75;
+      text-decoration:none;
+      border-bottom: 1px solid transparent;
+    }
+    .links a:hover{
+      border-bottom-color: color-mix(in srgb, var(--text) 40%, transparent);
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>Dog Days</h1>
+      <p>Track what your dog did today — meals, walks, and more.</p>
+
+      <!-- Replace this with your real App Store URL -->
+        <a class="btn" href="#">
+        Download on the App Store
+      </a>
+
+      <div class="fine">Simple, fast, and built for daily dog life.</div>
+
+      <div class="links">
+        <a href="mailto:support@dog-days.com">Support</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
