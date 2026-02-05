@@ -34,7 +34,7 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      padding:32px;
+      padding:48px;
       font-family: ui-rounded, -apple-system, system-ui, "SF Pro Rounded", "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color: var(--text);
       -webkit-font-smoothing: antialiased;
@@ -47,39 +47,42 @@
     }
 
     h1{
-      margin: 0 0 28px;
-      font-size: clamp(52px, 8vw, 86px);
+      margin: 0 0 18px;
+      font-size: clamp(56px, 9vw, 92px);
       font-weight: 800;
       letter-spacing: -0.04em;
     }
 
-    .btn{
-      display:inline-block;
-      padding: 14px 22px;
-      border-radius: 14px;
-      background: var(--accent);
-      color: var(--onAccent);
-      text-decoration:none;
-      font-size: 16px;
+    .slogan{
+      margin: 0 0 40px;
+      font-size: clamp(18px, 2.4vw, 22px);
       font-weight: 600;
-      border: 1px solid rgba(43,194,191,0.90);
-      box-shadow: 0 3px 4px rgba(43,194,191,0.15);
-      transform: scale(1);
-      transition: transform .12s ease, filter .12s ease;
-      user-select:none;
-      -webkit-tap-highlight-color: transparent;
+      opacity: 0.85;
     }
-    .btn:active{ transform: scale(0.96); }
+
+    .store-badge{
+      display:inline-block;
+      height: 56px;
+    }
+    .store-badge img{
+      height: 100%;
+      width: auto;
+      display: block;
+    }
   </style>
 </head>
 
 <body>
   <main class="wrap">
     <h1>Dog Days</h1>
+    <div class="slogan">Stop the sh💩t talk.</div>
 
-    <!-- Replace this with your real App Store URL -->
-    <a class="btn" href="#">
-      Download on the App Store
+    <!-- Replace the href with your App Store URL -->
+    <a class="store-badge" href="#">
+      <img
+        src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+        alt="Download on the App Store"
+      />
     </a>
   </main>
 </body>
