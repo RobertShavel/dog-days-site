@@ -25,6 +25,25 @@
       }
     }
 
+    .links{
+      margin-top: 32px;
+      display:flex;
+      justify-content:center;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 14px;
+      opacity: 0.75;
+    }
+    .links a{
+      color: var(--text);
+      text-decoration:none;
+      border-bottom: 1px solid transparent;
+    }
+    .links a:hover{
+      border-bottom-color: color-mix(in srgb, var(--text) 40%, transparent);
+      opacity: 0.9;
+    }
+
     *{ box-sizing:border-box; }
 
     body{
@@ -50,7 +69,7 @@
       margin: 0 0 18px;
       font-size: clamp(56px, 9vw, 92px);
       font-weight: 800;
-      letter-spacing: -0.02em;
+      letter-spacing: 0.02em;
     }
 
     .slogan{
@@ -84,6 +103,12 @@
         alt="Download on the App Store"
       />
     </a>
+
+    <div class="links">
+      <a href="https://dog-days.com/terms">Terms</a>
+      <a href="https://dog-days.com/privacy">Privacy</a>
+      <a href="mailto:support@dog-days.com">Support</a>
+    </div>
   </main>
 </body>
 </html>
