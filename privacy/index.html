@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Dog Days</title>
+  <style>
+    :root{
+      --accent: #2BC2BF;
+      --accent20: rgba(43,194,191,0.20);
+      --bg: #ffffff;
+      --text: #0b0b0f;
+      --surface: #f2f2f7;
+      --stroke: rgba(60,60,67,0.29);
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg: #000000;
+        --text: #ffffff;
+        --surface: #1c1c1e;
+        --stroke: rgba(84,84,88,0.65);
+      }
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      min-height:100vh;
+      background: linear-gradient(135deg, var(--accent20), var(--surface));
+      display:flex;
+      justify-content:center;
+      padding:36px 20px 60px;
+      font-family: ui-rounded, -apple-system, system-ui, "SF Pro Rounded", "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+    }
+    .wrap{
+      width: min(760px, 100%);
+      background: color-mix(in srgb, var(--surface) 95%, transparent);
+      border: 1px solid var(--stroke);
+      border-radius: 24px;
+      padding: 36px 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    }
+    h1{
+      margin:0 0 10px;
+      font-size: clamp(32px, 5vw, 44px);
+      letter-spacing: -0.02em;
+    }
+    .date{
+      font-size: 14px;
+      opacity: 0.7;
+      margin-bottom: 24px;
+    }
+    h2{
+      margin: 22px 0 8px;
+      font-size: 18px;
+    }
+    p, li{
+      font-size: 16px;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+    ul{ padding-left: 20px; }
+    a{ color: var(--text); }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Privacy Policy</h1>
+    <div class="date">Last updated: February 5, 2026</div>
+
+    <p>Dog Days is a dog care tracking app that lets you log meals, walks, pupdates, and share a Pack with others.</p>
+
+    <h2>Information We Collect</h2>
+    <ul>
+      <li><strong>Account information:</strong> email address, user ID</li>
+      <li><strong>Pack data:</strong> pack name, dog name, member roles</li>
+      <li><strong>Content you add:</strong> logs, pupdates, photos, notes</li>
+      <li><strong>Device data:</strong> push notification tokens</li>
+      <li><strong>Usage analytics:</strong> basic app events (e.g., sign up, log created)</li>
+    </ul>
+
+    <h2>How We Use Information</h2>
+    <ul>
+      <li>To create and manage your account</li>
+      <li>To sync pack data across members</li>
+      <li>To send optional notifications</li>
+      <li>To understand app usage and improve features</li>
+    </ul>
+
+    <h2>Data Sharing</h2>
+    <p>We do <strong>not</strong> sell your data. We only share information with service providers required to run the app:</p>
+    <ul>
+      <li><strong>Firebase (Google)</strong> for authentication, database, file storage, and analytics</li>
+    </ul>
+
+    <h2>Your Choices</h2>
+    <ul>
+      <li>You can delete logs, pupdates, and your account at any time in the app</li>
+      <li>You can leave or delete a Pack (if eligible)</li>
+      <li>You can turn off notifications</li>
+    </ul>
+
+    <h2>Data Retention</h2>
+    <p>Data is retained until you delete it or your account is deleted.</p>
+
+    <h2>Contact</h2>
+    <p>Questions? Email <a href="mailto:support@dog-days.com">support@dog-days.com</a>.</p>
+  </main>
+</body>
+</html>
