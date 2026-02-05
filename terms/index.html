@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terms of Service — Dog Days</title>
+  <style>
+    :root{
+      --accent: #2BC2BF;
+      --accent20: rgba(43,194,191,0.20);
+      --bg: #ffffff;
+      --text: #0b0b0f;
+      --surface: #f2f2f7;
+      --stroke: rgba(60,60,67,0.29);
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg: #000000;
+        --text: #ffffff;
+        --surface: #1c1c1e;
+        --stroke: rgba(84,84,88,0.65);
+      }
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      min-height:100vh;
+      background: linear-gradient(135deg, var(--accent20), var(--surface));
+      display:flex;
+      justify-content:center;
+      padding:36px 20px 60px;
+      font-family: ui-rounded, -apple-system, system-ui, "SF Pro Rounded", "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+    }
+    .wrap{
+      width: min(760px, 100%);
+      background: color-mix(in srgb, var(--surface) 95%, transparent);
+      border: 1px solid var(--stroke);
+      border-radius: 24px;
+      padding: 36px 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    }
+    h1{
+      margin:0 0 10px;
+      font-size: clamp(32px, 5vw, 44px);
+      letter-spacing: -0.02em;
+    }
+    .date{
+      font-size: 14px;
+      opacity: 0.7;
+      margin-bottom: 24px;
+    }
+    h2{
+      margin: 22px 0 8px;
+      font-size: 18px;
+    }
+    p, li{
+      font-size: 16px;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+    ul{ padding-left: 20px; }
+    a{ color: var(--text); }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Terms of Service</h1>
+    <div class="date">Last updated: February 5, 2026</div>
+
+    <p>By using Dog Days, you agree to these terms.</p>
+
+    <h2>Use of the App</h2>
+    <p>Dog Days is provided for personal use to track and share dog care logs.</p>
+
+    <h2>Accounts</h2>
+    <p>You are responsible for your account and any activity under it. You must provide accurate information when creating an account.</p>
+
+    <h2>Pack Sharing</h2>
+    <p>If you join a Pack, your logs and pupdates may be visible to other Pack members. A Pack can be locked if its subscription is inactive.</p>
+
+    <h2>Subscriptions</h2>
+    <p>Dog Days offers an auto‑renewing subscription to unlock Pack sharing. Payment is charged to your Apple ID account, and the subscription renews unless canceled.</p>
+
+    <h2>Content</h2>
+    <p>You keep ownership of content you upload, but you grant Dog Days permission to store and display it within your Pack.</p>
+
+    <h2>Termination</h2>
+    <p>You can delete your account at any time. We may suspend accounts that abuse the service.</p>
+
+    <h2>Contact</h2>
+    <p>Questions? Email <a href="mailto:support@dog-days.com">support@dog-days.com</a>.</p>
+  </main>
+</body>
+</html>
